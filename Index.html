@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nova+Oval&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="inner-box" id="card">
+  <div class="container">
+  <h1 class="line-1 anim-typewriter">TODO LIST...</h1>
+  
+  <input id="input" type="text"placeholder="Enter an event...">
+  <button id="button">add</button>
+
+    <div id="todos">
+  
+     </div>
+     <h4></h4>
+     <button type="button" onclick="front()" class="flip">notebook</button>
+   </div>
+   <div class="second-container">
+      <h1 class="line-1 anim-typewriter">NOTEBOOK</h1> 
+  <div class="sheet" id="sheet">
+ </div>
+ <div class="buttonFlex">
+ <textarea class="area" placeholder="type your text here....." id="area"></textarea>
+ <button type="button" id="Enter" onclick="enter()">enter</button>
+ </div>
+ <br />
+      <button type="button" onclick="back()" class="flip">Todo list</button>
+   </div>
+   </div>
+  <script src="main.js"></script>
+</body>
+</html>

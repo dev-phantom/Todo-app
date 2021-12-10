@@ -1,0 +1,168 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  background-color: #fff;
+}
+.container{
+  border: 3px solid orange;
+  border-radius: .5rem;
+  margin: 2rem;
+  padding: 10px;
+  overflow-x: none;
+  background-color: #f8f8f8;
+  box-shadow: -2px -2px 5px #f2f2f2, 3px 4px 6px #272727;
+   perspective: 1000px;
+}
+    .inner-box{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 1s;
+    }
+  .container, .second-container{
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  .second-container{
+    position: relative;
+    top: 0;
+    border: 3px solid orange;
+  border-radius: .5rem;
+  margin: 2rem;
+  padding: 10px;
+  overflow-x: none;
+  background-color: #f8f8f8;
+  box-shadow: -2px -2px 5px #f2f2f2, 3px 4px 6px #272727;
+   perspective: 1000px;
+   transform: rotateY(180deg);
+  }
+input{
+  padding: 10px;
+  margin: 6px;
+  height: 3rem;
+  background-color: #eeeeee;
+  border-left:2.5px solid orange;
+  border-right:2.5px solid orange;
+  border-top: none;
+  border-radius: 1rem;
+  border-bottom: none;
+  outline:none;
+}
+#button{
+  padding: 10px;
+  background-color: #F5E0CD;
+  border-radius: .5rem;
+  border: 2px solid orange;
+  outline:none;
+  cursor: pointer;
+}
+.flip{
+  padding: 10px;
+  position: absolute;
+  bottom: -5rem;
+  background-color: #F5E0CD;
+  border-radius: .5rem;
+  border: 2px solid orange;
+  outline:none;
+  margin-left:5.5rem;
+}
+p{
+  padding: 8px;
+  border: none;
+  border-bottom: 0.1px thin black;
+  margin: 2px;
+  overflow-x: none;
+}
+
+p:nth-child(even){
+  background-color: #F5E0CD;
+  margin-top: .5rem;
+  border-left: 2px solid orange;
+}
+
+p:nth-child(odd){
+  background-color: #f0f0f0;
+  border-left: 2px solid orange;
+}
+
+h1{
+  font-family: 'Nova Oval', cursive;
+  font-weight: 900;
+  font-size: 2rem;
+  text-align: center;
+  color: orange;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid orange;
+    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 1rem;}
+  to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: orange;}
+  to{border-right-color: transparent;
+    visibility: hidden;
+  }
+
+}
+span{
+  float: right;
+  font-size: 1rem;
+}
+
+h4{
+  text-align: center;
+  color: red;
+  display: block;
+}
+.sheet{
+ font-family: 'Indie Flower', cursive;
+ background-color: #f8f8f8;
+ background: repeating-linear-gradient(#f8f8f8, #f8f8f8 25px, orange 26px, orange 27px);
+
+ height: 420px;
+ width: 100%;
+ padding-top: .2rem;
+ margin-top:.5rem;
+ margin-left: 1px;
+ overflow-y: none;
+ padding-bottom: 1rem;
+}
+.area{
+   padding: 10px;
+  margin: 6px;
+  height: 5rem;
+  background-color: #eeeeee, 0.5;
+  border: 2px solid orange;
+  border-radius: 1rem;
+  outline:none;
+}
+#Enter{
+  padding: 10px;
+  background-color: #F5E0CD;
+  border-radius: .5rem;
+  border: 2px solid orange;
+  outline:none;
+  width: 5rem;
+  height: 4rem;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.buttonFlex{
+  display: flex;
+}
